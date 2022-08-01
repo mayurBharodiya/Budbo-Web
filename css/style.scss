@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:wght@400;500;700&display=swap');
+$color: (
+    backcolor : #f3f1f8, 
+    purplecolor : #6E2DFA,
+    gray_text_color: #736B8E,
+    orangecolor: #FF9644,
+    skybluecolor: #30C6FF,
+    border_grey_color: #E0DBED,
+    connect_color: #FF9644,
+    trax_color: #30C6FF,
+);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", "Roboto";
+}
+
+.wrapper {
+    max-width: 1920px;
+    width: 100%;
+    background-color: map-get($color, backcolor);
+    .home_section {
+        // background-color: rgb(244, 117, 117);
+        width: 100%;
+        min-height: 1000px;
+        overflow: auto;
+        background-image: url("../images/illustrations/home_illustration.svg");
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+        .desc_container {
+            width: 52%;
+            padding-left: 100px;
+            margin: 100px 0px;
+            h1 {
+                font-size: 52px;
+                line-height: 62px;
+            }
+            .purple_text {
+                color: map-get($color , purplecolor )
+            }
+            p {
+                font-size: 26px;
+                margin: 15px auto;
+                color: map-get($color , gray_text_color);
+            }
+            .invest_now {
+                margin: 100px 0px;
+                display: flex;
+                align-items: center;
+                background-color: map-get($color , purplecolor );
+                color: #fff;
+                padding: 30px 45px;
+                border-radius: 8px;
+                border: none;
+                font-family: "Poppins";
+                font-size: 26px;
+                font-weight: bold;
+                cursor: pointer;
+                img {
+                    margin-left: 5px;
+                    height: 30px;
+                }
+            }
+            .invest_now:hover {
+                background-color: darken(#6E2DFA, 10);
+            }
+        }
+    }
+    .white_content_container {
+        background-color: white;
+        width: 95%;
+        height: auto;
+        border-radius: 48px;
+        margin: -100px auto 100px;
+        padding: 100px 80px 50px;
+        .main_container {
+            // height: 1000px;
+            background-color: rgb(233, 183, 183);
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            column-gap: 20px;
+            .sidebar_content_container::-webkit-scrollbar {
+                display: none;
+              }
+            .sidebar_content_container {
+                flex: 1;
+                height: 98vh;
+                overflow: auto;
+                position: -webkit-sticky;
+                position: sticky;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                background-color: #ebe9f1;
+                border: 0px solid;
+                border-radius: 20px;
+                .flex_container {
+                    margin: 20px;
+                    border-bottom: 1px solid map-get($color, border_grey_color);
+                    display: flex;
+                    justify-content: space-around;
+                    div {
+                        margin: 20px auto;
+                    }
+                    p {
+                        font-size: 18px;
+                        color: map-get($color , gray_text_color);
+                    }
+                    p.val {color: black;}
+                }
+                p.stat_text {
+                    margin: 20px;
+                    font-size: 18px;
+                }
+                .stat_div {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    background-color: #F3F1F8;
+                    border: 1px solid map-get($color , border_grey_color);
+                    border-radius: 8px;
+                    margin: 10px 20px;
+                    padding: 12px 2px;
+                    color: map-get($color , gray_text_color);
+                    p {
+                        font-size: 18px;
+                    }
+                    .right_div {
+                        p.tag {
+                            background-color: #d9d8dc;
+                            padding: 8px;
+                            border: 0px solid;
+                            border-radius: 8px;
+                        }
+                        display: flex;
+                        align-items: center;
+                        img {margin-left: 8px;height: 7px;}
+                    }
+                }
+                .link_text {
+                    // margin-top: 15px;
+                    // margin-bottom: 30px;
+                    margin: 15px 20px 30px;
+                    display: flex;
+                    color: map-get($color , purplecolor);
+                    font-weight: bold;
+                    img {margin-left: 5px;}
+                }
+                .review_section {
+                    background-color: #fff;
+                    // height: 400px;
+                    border: 1px solid map-get($color , border_grey_color );
+                    border-bottom-left-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                    padding: 20px;
+                    font-size: 18px;
+                    font-family: "Poppins";
+                    p {
+                        color: map-get($color , gray_text_color);
+                        font-weight: 500;
+                    }
+                    .prof_sec {
+                        display: flex;
+                        justify-content: left;
+                        margin-bottom: 20px;
+                        div {
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+            .content_container {
+                flex: 3;
+                background-color: green;
+                iframe.video_player {
+                    width: 100%;
+                    height: 600px;
+                    border-radius: 14px;
+                    margin-bottom: 30px;
+                }
+                .sub_content_container {
+                    background-color: orange;
+                    padding-left: 100px;
+                    padding-right: 50px;
+                    width: 100%;
+                    height: auto;
+                    h2 {
+                        font-size: 48px;
+                        line-height: 56px;
+                        span {
+                            white-space: pre-line;
+                            color: map-get($color, purplecolor );
+                        }
+                    }
+                    p {
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// screen: 1640 - 1440
+@media only screen and (max-width: 1600px) and (min-width: 1440px) {
+    .wrapper {
+        .home_section {
+            background-color: rgb(227, 228, 168);
+            background-size: 55%;
+            .desc_container {
+                width: 60%;
+                h1 {
+                    font-size: 48px;
+                }
+                p {
+                    font-size: 24px;
+                }
+                .invest_now {
+                    font-size: 24px;
+                }
+            }
+        }
+        .white_content_container {
+            .main_container {
+                background-color: rgb(233, 183, 183);
+                column-gap: 10px;
+                .sidebar_content_container {
+                    .flex_container {
+                        margin: 20px 15px;
+                    }
+                    p.stat_text {
+                        margin: 20px 15px;
+                    }
+                    .stat_div {
+                        margin: 10px 15px;
+                        padding: 12px 2px;
+                        .right_div {
+                            p.tag {
+                                padding: 5px;
+                            }
+                        }
+                    }
+                    .link_text {
+                        margin: 15px 15px 30px;
+                        img {margin-left: 8px;}
+                    }
+                    .review_section {
+                        padding: 20px 15px;
+                        .prof_sec {
+                            display: flex;
+                            justify-content: left;
+                            margin-bottom: 20px;
+                            div {
+                                margin-left: 20px;
+                            }
+                        }
+                    }
+                }
+                .content_container {
+                    flex: 3;
+                    background-color: green;
+                    iframe.video_player {
+                        width: 100%;
+                        height: 600px;
+                        border-radius: 14px;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+// screen: 1439.99 - 1366
+@media only screen and (max-width: 1439.99px) and (min-width: 1366px) {
+    .wrapper {
+        .home_section {
+            background-color: rgb(168, 228, 178);
+            background-size: 55%;
+            .desc_container {
+                width: 55%;
+                h1 {
+                    font-size: 44px;
+                }
+                p {
+                    font-size: 24px;
+                }
+                .invest_now {
+                    font-size: 24px;
+                }
+            }
+        }
+        .white_content_container {
+            .main_container {
+                background-color: rgb(233, 183, 183);
+                column-gap: 10px;
+                .sidebar_content_container {
+                    .flex_container {
+                        margin: 20px 15px;
+                    }
+                    p.stat_text {
+                        margin: 20px 15px;
+                    }
+                    .stat_div {
+                        margin: 10px 15px;
+                        padding: 12px 2px;
+                        .right_div {
+                            p.tag {
+                                padding: 5px;
+                            }
+                        }
+                    }
+                    .link_text {
+                        margin: 15px 15px 30px;
+                        img {margin-left: 8px;}
+                    }
+                    .review_section {
+                        padding: 20px 15px;
+                        .prof_sec {
+                            display: flex;
+                            justify-content: left;
+                            margin-bottom: 20px;
+                            div {
+                                margin-left: 20px;
+                            }
+                        }
+                    }
+                }
+                .content_container {
+                    flex: 3;
+                    background-color: green;
+                    iframe.video_player {
+                        width: 100%;
+                        height: 600px;
+                        border-radius: 14px;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+// screen: 1365.99 - 1024
+@media only screen and (max-width: 1365.99px) and (min-width: 1024px) {
+    .wrapper {
+        .home_section {
+            background-color: rgb(168, 204, 228);
+            background-position: bottom right;
+            background-size: 60%;
+            .desc_container {
+                width: 68%;
+                h1 {
+                    font-size: 40px;
+                }
+                p {
+                    font-size: 22px;
+                }
+                .invest_now {
+                    font-size: 24px;
+                }
+            }
+        }
+        .white_content_container {
+            .main_container {
+                background-color: rgb(233, 183, 183);
+                column-gap: 10px;
+                .sidebar_content_container {
+                    display: none;
+                }
+                .content_container {
+                    flex: 3;
+                    background-color: green;
+                    iframe.video_player {
+                        width: 100%;
+                        height: 600px;
+                        border-radius: 14px;
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+// screen: 1023.99 - 768
+@media only screen and (max-width: 1023.99px) and (min-width: 768px) {
+    .wrapper {
+        .home_section {
+            height: 1100px;
+            background-color: rgb(215, 228, 168);
+            background-image: url("../images/illustrations/mob/home_illustration_mob.svg");
+            background-position: bottom right;
+            background-size: 66%;
+            .desc_container {
+                width: 80%;
+                padding-left: 60px;
+                margin: 80px 0px 100px;
+                h1 {
+                    font-size: 40px;
+                    line-height: 52px;
+                }
+                p {
+                    font-size: 22px;
+                }
+                .invest_now {
+                    font-size: 22px;
+                }
+            }
+        }
+        .white_content_container {
+            .main_container {
+                background-color: rgb(233, 183, 183);
+                column-gap: 10px;
+                .sidebar_content_container {
+                    display: none;
+                }
+                .content_container {
+                    flex: 3;
+                    background-color: green;
+                    iframe.video_player {
+                        height: 400px;
+                    }
+                }
+            }
+        }
+    }
+}
+// screen: 767.99
+@media only screen and (max-width: 767.99px) {
+    .wrapper {
+        .home_section {
+            // height: 1100px;
+            background-color: rgb(214, 168, 228);
+            background-image: url("../images/illustrations/mob/home_illustration_mob.svg");
+            background-position: bottom right;
+            background-size: 80%;
+            .desc_container {
+                width: 100%;
+                padding: 10px;
+                margin: 100px 0px 100px;
+                h1 {
+                    font-size: 32px;
+                    line-height: 42px;
+                }
+                p {
+                    font-size: 18px;
+                }
+                .invest_now {
+                    margin: 40px 0px;
+                    padding: 25px 40px;
+                    font-size: 18px;
+                    img {
+                        margin-left: 5px;
+                        height: 25px;
+                    }
+                }
+            }
+        }
+        .white_content_container {
+            .main_container {
+                background-color: rgb(233, 183, 183);
+                column-gap: 10px;
+                .sidebar_content_container {
+                    display: none;
+                }
+                .content_container {
+                    flex: 3;
+                    background-color: green;
+                    iframe.video_player {
+                        height: 300px;
+                    }
+                }
+            }
+        }
+    }
+}
