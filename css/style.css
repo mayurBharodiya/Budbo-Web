@@ -329,7 +329,6 @@ p {
   }
   .wrapper .white_content_container .main_container .content_container {
     flex: 3;
-    background-color: green;
   }
 }
 @media only screen and (max-width: 1365.99px) and (min-width: 1024px) {
@@ -360,7 +359,6 @@ p {
   }
   .wrapper .white_content_container .main_container .content_container {
     flex: 3;
-    background-color: green;
   }
 }
 @media only screen and (max-width: 1023.99px) and (min-width: 768px) {
@@ -396,7 +394,6 @@ p {
   }
   .wrapper .white_content_container .main_container .content_container {
     flex: 3;
-    background-color: green;
   }
   .wrapper .white_content_container .main_container .content_container iframe.video_player {
     height: 400px;
@@ -440,7 +437,6 @@ p {
   }
   .wrapper .white_content_container .main_container .content_container {
     flex: 3;
-    background-color: green;
   }
   .wrapper .white_content_container .main_container .content_container iframe.video_player {
     height: 300px;
