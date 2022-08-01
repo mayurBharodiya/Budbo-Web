@@ -19,6 +19,36 @@ $color: (
 body {
     font-family: "Poppins", "Roboto";
 }
+.purpleText {
+    color: map-get($color , purplecolor);
+}
+.underlineText {
+    text-decoration: underline;
+}
+.boldText {
+    font-weight: bold;
+}
+.black {
+    color: black;
+}
+h1 {
+    font-size: 52px;
+    line-height: 62px;
+}
+h2 {
+    font-size: 48px;
+    line-height: 56px;
+}
+h3 {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 30px 0px;
+}
+p {
+    font-size: 26px;
+    margin: 15px auto;
+    color: map-get($color , gray_text_color);
+}
 
 .wrapper {
     max-width: 1920px;
@@ -37,18 +67,6 @@ body {
             width: 52%;
             padding-left: 100px;
             margin: 100px 0px;
-            h1 {
-                font-size: 52px;
-                line-height: 62px;
-            }
-            .purple_text {
-                color: map-get($color , purplecolor )
-            }
-            p {
-                font-size: 26px;
-                margin: 15px auto;
-                color: map-get($color , gray_text_color);
-            }
             .invest_now {
                 margin: 100px 0px;
                 display: flex;
@@ -95,8 +113,8 @@ body {
                 overflow: auto;
                 position: -webkit-sticky;
                 position: sticky;
-                margin-top: 10px;
-                margin-bottom: 10px;
+                top: 10px;
+                bottom: 10px;
                 background-color: #ebe9f1;
                 border: 0px solid;
                 border-radius: 20px;
@@ -178,6 +196,11 @@ body {
             .content_container {
                 flex: 3;
                 background-color: green;
+                .reason_label {
+                    margin: 15px 0px;
+                    font-size: 26px;
+                    color: map-get($color, gray_text_color);
+                }
                 iframe.video_player {
                     width: 100%;
                     height: 600px;
@@ -190,16 +213,8 @@ body {
                     padding-right: 50px;
                     width: 100%;
                     height: auto;
-                    h2 {
-                        font-size: 48px;
-                        line-height: 56px;
-                        span {
-                            white-space: pre-line;
-                            color: map-get($color, purplecolor );
-                        }
-                    }
-                    p {
-                        font-size: 26px;
+                    .reasons_header {
+                        margin: 80px 0px;
                     }
                 }
             }
@@ -267,12 +282,6 @@ body {
                 .content_container {
                     flex: 3;
                     background-color: green;
-                    iframe.video_player {
-                        width: 100%;
-                        height: 600px;
-                        border-radius: 14px;
-                        margin-bottom: 30px;
-                    }
                 }
             }
         }
@@ -336,12 +345,6 @@ body {
                 .content_container {
                     flex: 3;
                     background-color: green;
-                    iframe.video_player {
-                        width: 100%;
-                        height: 600px;
-                        border-radius: 14px;
-                        margin-bottom: 30px;
-                    }
                 }
             }
         }
@@ -377,12 +380,6 @@ body {
                 .content_container {
                     flex: 3;
                     background-color: green;
-                    iframe.video_player {
-                        width: 100%;
-                        height: 600px;
-                        border-radius: 14px;
-                        margin-bottom: 30px;
-                    }
                 }
             }
         }
