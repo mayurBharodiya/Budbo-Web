@@ -47,6 +47,10 @@ p {
   color: #736B8E;
 }
 
+hr {
+  border: 1px solid #E0DBED;
+}
+
 .wrapper {
   max-width: 1920px;
   width: 100%;
@@ -217,6 +221,216 @@ p {
 }
 .wrapper .white_content_container .main_container .content_container .sub_content_container .reasons_header {
   margin: 80px 0px;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason1_section {
+  margin-top: 100px;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason1_section .budbo_ecosystem_section {
+  margin: 30px auto;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason1_section .budbo_ecosystem_section .budbo_app_section, .wrapper .white_content_container .main_container .content_container .sub_content_container .reason1_section .budbo_ecosystem_section .budbo_connect_section, .wrapper .white_content_container .main_container .content_container .sub_content_container .reason1_section .budbo_ecosystem_section .budbo_trax_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 10px;
+  padding: 40px 0px;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason1_section .budbo_ecosystem_section .budbo_app_section .content_section, .wrapper .white_content_container .main_container .content_container .sub_content_container .reason1_section .budbo_ecosystem_section .budbo_connect_section .content_section, .wrapper .white_content_container .main_container .content_container .sub_content_container .reason1_section .budbo_ecosystem_section .budbo_trax_section .content_section {
+  flex: 1;
+  font-size: 22px;
+  color: #736B8E;
+  display: flex;
+  align-items: center;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason1_section .budbo_ecosystem_section .budbo_app_section .content_section span, .wrapper .white_content_container .main_container .content_container .sub_content_container .reason1_section .budbo_ecosystem_section .budbo_connect_section .content_section span, .wrapper .white_content_container .main_container .content_container .sub_content_container .reason1_section .budbo_ecosystem_section .budbo_trax_section .content_section span {
+  display: none;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason1_section .budbo_ecosystem_section .budbo_trax_section {
+  margin-bottom: 100px;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason1_section .budbo_ecosystem_section .banner_section {
+  width: 280px;
+  height: 150px;
+  font-weight: bold;
+  color: #6E2DFA;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  font-size: 22px;
+  border: 0px solid;
+  border-radius: 8px;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason1_section .budbo_ecosystem_section .banner_section.budbo_app {
+  background-color: #c4aafd;
+  background-image: url("../images/reasons/reason1/budbo_app_banner_bg.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  color: #6E2DFA;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason1_section .budbo_ecosystem_section .banner_section.budbo_connect {
+  background-color: #ffdec4;
+  background-image: url("../images/reasons/reason1/budbo_connect_banner_bg.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  color: #FF9644;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason1_section .budbo_ecosystem_section .banner_section.budbo_trax {
+  background-color: #b0e9ff;
+  background-image: url("../images/reasons/reason1/budbo_trax_banner_bg.svg"), url("../images/reasons/reason1/budbo_trax_banner_bg2.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  color: #30C6FF;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason2_section {
+  margin-top: 100px;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason2_section .mobile_flex_container {
+  margin: 100px auto;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason2_section .mobile_flex_container .flex_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason2_section .mobile_flex_container p.center_aligned {
+  text-align: center;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason2_section .mobile_flex_container a {
+  color: #736B8E;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason3_section {
+  margin-top: 100px;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason3_section .table_container {
+  height: 500px;
+  background-image: url("../images/reasons/reason3/Table.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-bottom: 100px;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason4_section {
+  margin: 100px auto;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason4_section hr {
+  margin-top: 100px;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason4_section .mobile_flex_container {
+  margin: 100px auto;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason4_section .mobile_flex_container .flex_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason4_section .mobile_flex_container p.center_aligned {
+  text-align: center;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason4_section .mobile_flex_container a {
+  color: #736B8E;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason4_section .img_list_conatiner {
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason4_section .img_list_conatiner .img_container {
+  flex: 1;
+  min-width: 250px;
+  background-image: url("../images/reasons/reason4/profile.svg"), url("../images/reasons/reason4/pattern.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason4_section .img_list_conatiner ul.content_container {
+  margin-left: 40px;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason4_section .img_list_conatiner ul.content_container li {
+  font-size: 18px;
+  color: #736B8E;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason5_section {
+  margin: 100px auto;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason5_section ul.ul_list {
+  font-size: 22px;
+  margin: 40px;
+  color: #736B8E;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason5_section .image_container {
+  margin: 100px auto;
+  height: 550px;
+  background-image: url("../images/reasons/reason5/reason5_illustration.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason6_section {
+  margin: 100px auto;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason6_section .flex_container {
+  margin: 100px auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason6_section .flex_container .image_section {
+  flex: 1;
+  min-width: 300px;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason6_section .flex_container .image_section .image_container {
+  width: 100%;
+  height: 400px;
+  background-image: url("../images/reasons/reason6/image2.svg"), url("../images/reasons/reason6/bg_pattern.svg"), url("../images/reasons/reason6/image.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left, bottom left, top right;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason6_section .flex_container .image_section .prof_name {
+  margin-top: 10px;
+  color: #736B8E;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason6_section .flex_container .image_section .prof_name p {
+  font-size: 18px;
+  margin: 0px auto;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason6_section .flex_container .list_container {
+  flex: 2;
+  margin-left: 20px;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason6_section .flex_container .list_container li {
+  font-size: 22px;
+  margin: 20px;
+  color: #736B8E;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason6_section .flex_container .list_container li span {
+  color: black;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason7_section {
+  margin: 100px auto;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason7_section .world_map_image_container {
+  margin: 20px 0px 100px;
+  height: 750px;
+  background-image: url("../images/reasons/reason7/World Map.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+}
+.wrapper .white_content_container .main_container .content_container .sub_content_container .reason7_section .world_map_image_container p {
+  background-color: greenyellow;
+  width: 70%;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
 }
 
 @media only screen and (max-width: 1600px) and (min-width: 1440px) {

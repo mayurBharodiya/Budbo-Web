@@ -49,6 +49,9 @@ p {
     margin: 15px auto;
     color: map-get($color , gray_text_color);
 }
+hr {
+    border: 1px solid map-get($color, border_grey_color );
+}
 
 .wrapper {
     max-width: 1920px;
@@ -214,6 +217,216 @@ p {
                     height: auto;
                     .reasons_header {
                         margin: 80px 0px;
+                    }
+                    .reason1_section {
+                        margin-top: 100px;
+                        .budbo_ecosystem_section {
+                            margin: 30px auto;
+                            .budbo_app_section, .budbo_connect_section, .budbo_trax_section {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                flex-wrap: wrap;
+                                column-gap: 10px;
+                                row-gap: 10px;
+                                padding: 40px 0px;
+                                // border-bottom: 1px solid map-get($color , border_grey_color);
+                                .content_section {
+                                    flex: 1;
+                                    span {display: none;}
+                                    font-size: 22px;
+                                    color: map-get($color , gray_text_color);
+                                    display: flex;
+                                    align-items: center;
+                                }
+                            }
+                            .budbo_trax_section {
+                                margin-bottom: 100px;
+                            }
+                            .banner_section {
+                                width: 280px;
+                                height: 150px;
+                                font-weight: bold;
+                                color: map-get($color , purplecolor );
+                                display: flex;
+                                align-items: center;
+                                padding-left: 20px;
+                                font-size: 22px;
+                                border: 0px solid;
+                                border-radius: 8px;
+                            }
+                            .banner_section.budbo_app {
+                                background-color: lighten(map-get($color, purplecolor), 25);
+                                background-image: url("../images/reasons/reason1/budbo_app_banner_bg.svg");
+                                background-repeat: no-repeat;
+                                background-position: right bottom;
+                                color: map-get($color , purplecolor );
+                            }
+                            .banner_section.budbo_connect {
+                                background-color: lighten(map-get($color, orangecolor), 25);
+                                background-image: url("../images/reasons/reason1/budbo_connect_banner_bg.svg");
+                                background-repeat: no-repeat;
+                                background-position: right bottom;
+                                color: map-get($color , orangecolor );
+                            }
+                            .banner_section.budbo_trax {
+                                background-color: lighten(map-get($color, skybluecolor), 25);
+                                background-image: url("../images/reasons/reason1/budbo_trax_banner_bg.svg"), url("../images/reasons/reason1/budbo_trax_banner_bg2.svg");
+                                background-repeat: no-repeat;
+                                background-position: bottom right;  
+                                color: map-get($color , skybluecolor );
+                            }
+                        }
+                    }
+                    .reason2_section {
+                        margin-top: 100px;
+                        .mobile_flex_container {
+                            margin: 100px auto;
+                            .flex_container {
+                                display: flex;
+                                justify-content: space-evenly;
+                                align-items: baseline;
+                            }
+                            p.center_aligned {text-align: center;}
+                            a {
+                                color: map-get($color, gray_text_color);
+                            }
+                        }
+                    }
+                    .reason3_section {
+                        margin-top: 100px;
+                        .table_container {
+                            // background-color: #d9d8dc;
+                            height: 500px;
+                            background-image: url("../images/reasons/reason3/Table.svg");
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: contain;
+                            margin-bottom: 100px;
+                        }
+                    }
+                    .reason4_section {
+                        margin: 100px auto;
+                        hr {margin-top: 100px;}
+                        .mobile_flex_container {
+                            margin: 100px auto;
+                            .flex_container {
+                                display: flex;
+                                justify-content: space-evenly;
+                                align-items: baseline;
+                            }
+                            p.center_aligned {text-align: center;}
+                            a {
+                                color: map-get($color, gray_text_color);
+                            }
+                        }
+                        .img_list_conatiner {
+                            // background-color: rgb(153, 243, 153);
+                            margin: 100px auto;
+                            display: flex;
+                            justify-content: space-between;
+                            .img_container {
+                                flex: 1;
+                                min-width: 250px;
+                                background-image: url("../images/reasons/reason4/profile.svg"),
+                                url("../images/reasons/reason4/pattern.svg");
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: contain;
+                            }
+                            ul.content_container {
+                                margin-left: 40px;
+                                flex: 3;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-around;
+                                li {
+                                    font-size: 18px;
+                                    color: map-get($color, gray_text_color );
+                                }
+                            }
+                        }
+                    }
+                    .reason5_section {
+                        margin: 100px auto;
+                        ul.ul_list {
+                            font-size: 22px;
+                            margin: 40px;
+                            color: map-get($color, gray_text_color );
+                        }
+                        .image_container {
+                            margin: 100px auto;
+                            height: 550px;
+                            // background-color: #FF9644;
+                            background-image: url("../images/reasons/reason5/reason5_illustration.svg");
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: contain;
+                        }
+                    }
+                    .reason6_section {
+                        margin: 100px auto;
+                        .flex_container {
+                            margin: 100px auto;
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            .image_section {
+                                flex: 1;
+                                min-width: 300px;
+                                .image_container {
+                                    width: 100%;
+                                    height: 400px;
+                                    background-image: url("../images/reasons/reason6/image2.svg"),
+                                    url("../images/reasons/reason6/bg_pattern.svg"),
+                                    url("../images/reasons/reason6/image.svg");
+                                    background-repeat: no-repeat;
+                                    background-position: bottom left, bottom left, top right;
+                                }
+                                .prof_name {
+                                    margin-top: 10px;
+                                    color: map-get($color, gray_text_color);
+                                    p {
+                                        font-size: 18px;
+                                        margin: 0px auto;
+                                    }
+                                }
+                            }
+                            .list_container {
+                                flex: 2;
+                                margin-left: 20px;
+                                // width: 60%;
+                                li{
+                                    font-size: 22px;
+                                    margin: 20px;
+                                    color: map-get($color , gray_text_color );
+                                    span {
+                                        color: black;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .reason7_section {
+                        margin: 100px auto;
+                        .world_map_image_container {
+                            // background-color: tomato;
+                            margin: 20px 0px 100px;
+                            height: 750px;
+                            background-image: url("../images/reasons/reason7/World\ Map.svg");
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: contain;
+                            position: relative;
+                            p {
+                                background-color: greenyellow;
+                                width: 70%;
+                                position: absolute;
+                                bottom: 10px;
+                                left: 0;
+                            }
+                        }
                     }
                 }
             }
