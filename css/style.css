@@ -374,7 +374,6 @@ hr {
 .wrapper .white_content_container .main_container .content_container .sub_content_container .reason5_section .image_container {
   margin: 100px auto;
   height: 550px;
-  background-color: #FF9644;
   background-image: url("../images/reasons/reason5/reason5_illustration.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -426,7 +425,6 @@ hr {
   margin: 100px auto;
 }
 .wrapper .white_content_container .main_container .content_container .sub_content_container .reason7_section .world_map_image_container {
-  background-color: tomato;
   margin: 20px 0px 100px;
   height: 750px;
   background-image: url("../images/reasons/reason7/World Map.svg");
@@ -447,7 +445,6 @@ hr {
 .wrapper .white_content_container .main_container .content_container .sub_content_container .multi_billion_section .image_container {
   margin: 30px auto;
   height: 350px;
-  background-color: blueviolet;
   background-image: url("../images/illustrations/multi-billion-idea.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -499,7 +496,6 @@ hr {
 .wrapper .white_content_container .main_container .content_container .sub_content_container .business_solution_section .image_container {
   margin: 30px auto;
   height: 340px;
-  background-color: #736B8E;
   background-image: url("../images/illustrations/billion_dollar_solution.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -508,7 +504,6 @@ hr {
 .wrapper .white_content_container .main_container .content_container .sub_content_container .what_changed_section .image_container {
   margin: 100px auto;
   height: 600px;
-  background-color: tomato;
   background-image: url("../images/illustrations/what_changed_Illustartion.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -572,7 +567,6 @@ hr {
 .wrapper .white_content_container .main_container .content_container .sub_content_container .how_budbo_works .image_container {
   margin: 100px auto;
   height: 600px;
-  background-color: tomato;
   background-image: url("../images/illustrations/how_does_budbo_works.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -655,7 +649,6 @@ hr {
     font-size: 20px;
   }
   .wrapper .white_content_container .main_container {
-    background-color: rgb(233, 183, 183);
     -moz-column-gap: 10px;
          column-gap: 10px;
   }
@@ -740,7 +733,6 @@ hr {
     font-size: 22px;
   }
   .wrapper .home_section {
-    background-color: rgb(168, 228, 178);
     background-size: 55%;
   }
   .wrapper .home_section .desc_container {
@@ -750,7 +742,6 @@ hr {
     font-size: 20px;
   }
   .wrapper .white_content_container .main_container {
-    background-color: rgb(233, 183, 183);
     -moz-column-gap: 10px;
          column-gap: 10px;
   }
@@ -873,7 +864,6 @@ hr {
     font-size: 20px;
   }
   .wrapper .home_section {
-    background-color: rgb(168, 204, 228);
     background-position: bottom right;
     background-size: 60%;
   }
@@ -884,7 +874,6 @@ hr {
     font-size: 24px;
   }
   .wrapper .white_content_container .main_container {
-    background-color: rgb(168, 204, 228);
     -moz-column-gap: 10px;
          column-gap: 10px;
   }
@@ -976,7 +965,6 @@ hr {
     font-size: 20px;
   }
   .wrapper .home_section {
-    background-color: rgb(215, 228, 168);
     background-image: url("../images/illustrations/mob/home_illustration_mob.svg");
     background-position: bottom right;
     background-size: 66%;
@@ -993,7 +981,6 @@ hr {
     height: 20px;
   }
   .wrapper .white_content_container .main_container {
-    background-color: rgb(215, 228, 168);
     -moz-column-gap: 10px;
          column-gap: 10px;
   }
@@ -1200,12 +1187,8 @@ hr {
   .big_para {
     font-size: 18px;
   }
-  .wrapper {
-    background-color: red;
-  }
   .wrapper .home_section {
     height: 1100px;
-    background-color: rgb(214, 168, 228);
     background-image: url("../images/illustrations/mob/home_illustration_mob.svg");
     background-position: bottom right;
     background-size: 80%;
@@ -1228,8 +1211,6 @@ hr {
     padding: 100px 10px;
   }
   .wrapper .white_content_container .main_container {
-    background-color: rgb(233, 183, 183);
-    background-color: white;
     -moz-column-gap: 10px;
          column-gap: 10px;
   }
@@ -1334,7 +1315,6 @@ hr {
     flex-direction: column;
   }
   .wrapper .white_content_container .main_container .content_container .sub_content_container .reason4_section .img_list_conatiner .img_container {
-    background-color: pink;
     background-size: contain;
     margin: auto;
     min-width: auto;
@@ -1368,7 +1348,6 @@ hr {
     flex-direction: column;
   }
   .wrapper .white_content_container .main_container .content_container .sub_content_container .reason6_section .flex_container .image_section {
-    background-color: red;
     min-width: auto;
     margin: auto;
     flex: none;
