@@ -117,6 +117,7 @@ hr {
               }
             .sidebar_content_container {
                 flex: 1;
+                min-width: 350px;
                 height: 98vh;
                 overflow: auto;
                 position: -webkit-sticky;
@@ -152,7 +153,8 @@ hr {
                     border: 1px solid map-get($color , border_grey_color);
                     border-radius: 8px;
                     margin: 10px 20px;
-                    padding: 12px 2px;
+                    height: 70px;
+                    padding: 8px 2px;
                     color: map-get($color , gray_text_color);
                     p {
                         font-size: 18px;
@@ -203,6 +205,8 @@ hr {
             }
             .content_container {
                 flex: 3;
+                min-width: 100px;
+                // width: auto;
                 // background-color: green;
                 .reason_label {
                     margin: 15px 0px;
@@ -240,7 +244,6 @@ hr {
                                 .content_section {
                                     flex: 1;
                                     span {display: none;}
-                                    font-size: 22px;
                                     color: map-get($color , gray_text_color);
                                     display: flex;
                                     align-items: center;
@@ -301,7 +304,7 @@ hr {
                     .reason3_section {
                         margin-top: 100px;
                         .table_container {
-                            // background-color: #d9d8dc;
+                            background-color: #d9d8dc;
                             height: 500px;
                             background-image: url("../images/reasons/reason3/Table.svg");
                             background-repeat: no-repeat;
@@ -325,13 +328,13 @@ hr {
                             }
                         }
                         .img_list_conatiner {
-                            // background-color: rgb(153, 243, 153);
                             margin: 100px auto;
                             display: flex;
                             justify-content: space-between;
                             .img_container {
                                 flex: 1;
                                 min-width: 250px;
+                                min-height: 250px;
                                 background-image: url("../images/reasons/reason4/profile.svg"),
                                 url("../images/reasons/reason4/pattern.svg");
                                 background-repeat: no-repeat;
@@ -341,6 +344,7 @@ hr {
                             ul.content_container {
                                 margin-left: 40px;
                                 flex: 3;
+                                min-width: 350px;
                                 display: flex;
                                 flex-direction: column;
                                 justify-content: space-around;
@@ -361,7 +365,7 @@ hr {
                         .image_container {
                             margin: 100px auto;
                             height: 550px;
-                            // background-color: #FF9644;
+                            background-color: #FF9644;
                             background-image: url("../images/reasons/reason5/reason5_illustration.svg");
                             background-repeat: no-repeat;
                             background-position: center;
@@ -399,6 +403,7 @@ hr {
                             }
                             .list_container {
                                 flex: 2;
+                                min-width: 300px;
                                 margin-left: 20px;
                                 // width: 60%;
                                 li{
@@ -415,7 +420,7 @@ hr {
                     .reason7_section {
                         margin: 100px auto;
                         .world_map_image_container {
-                            // background-color: tomato;
+                            background-color: tomato;
                             margin: 20px 0px 100px;
                             height: 750px;
                             background-image: url("../images/reasons/reason7/World\ Map.svg");
@@ -431,12 +436,15 @@ hr {
                                 left: 0;
                             }
                         }
+                        .mob_content {
+                            display: none;
+                        }
                     }
                     .multi_billion_section {
                         .image_container {
                             margin: 30px auto;
                             height: 350px;
-                            // background-color: blueviolet;
+                            background-color: blueviolet;
                             background-image: url("../images/illustrations/multi-billion-idea.svg");
                             background-repeat: no-repeat;
                             background-position: center;
@@ -490,7 +498,7 @@ hr {
                         .image_container {
                             margin: 30px auto;
                             height: 340px;
-                            // background-color: #736B8E;
+                            background-color: #736B8E;
                             background-image: url("../images/illustrations/billion_dollar_solution.svg");
                             background-repeat: no-repeat;
                             background-position: center;
@@ -501,7 +509,7 @@ hr {
                         .image_container {
                             margin: 100px auto;
                             height: 600px;
-                            // background-color: tomato;
+                            background-color: tomato;
                             background-image: url("../images/illustrations/what_changed_Illustartion.svg");
                             background-repeat: no-repeat;
                             background-position: center;
@@ -514,6 +522,11 @@ hr {
                                 justify-content: space-between;
                                 align-items: center;
                                 column-gap: 30px;
+                                flex-wrap: wrap;
+                                .content_container {
+                                    width: auto;
+                                    min-width: 275px;
+                                }
                             }
                         }
                         .owl_banner_section {
@@ -563,7 +576,7 @@ hr {
                         .image_container {
                             margin: 100px auto;
                             height: 600px;
-                            // background-color: tomato;
+                            background-color: tomato;
                             background-image: url("../images/illustrations/how_does_budbo_works.svg");
                             background-repeat: no-repeat;
                             background-position: center;
@@ -622,20 +635,35 @@ hr {
 
 // screen: 1640 - 1440
 @media only screen and (max-width: 1600px) and (min-width: 1440px) {
+    h1 {
+        font-size: 46px; //48
+        line-height: 52px;
+    }
+    h2 {
+        font-size: 38px;
+        line-height: 44px;
+    }
+    h3 {
+        font-size: 26px;
+        line-height: 32px;
+        margin: 30px 0px;
+    }
+    p {
+        font-size: 20px; //24
+        margin: 30px auto;
+        color: map-get($color , gray_text_color);
+    }
+    .big_para {
+        font-size: 22px;
+    }
     .wrapper {
         .home_section {
             background-color: rgb(227, 228, 168);
             background-size: 55%;
             .desc_container {
-                width: 60%;
-                h1 {
-                    font-size: 48px;
-                }
-                p {
-                    font-size: 24px;
-                }
+                width: 55%;
                 .invest_now {
-                    font-size: 24px;
+                    font-size: 20px;
                 }
             }
         }
@@ -643,40 +671,92 @@ hr {
             .main_container {
                 background-color: rgb(233, 183, 183);
                 column-gap: 10px;
-                .sidebar_content_container {
-                    .flex_container {
-                        margin: 20px 15px;
-                    }
-                    p.stat_text {
-                        margin: 20px 15px;
-                    }
-                    .stat_div {
-                        margin: 10px 15px;
-                        padding: 12px 2px;
-                        .right_div {
-                            p.tag {
-                                padding: 5px;
-                            }
-                        }
-                    }
-                    .link_text {
-                        margin: 15px 15px 30px;
-                        img {margin-left: 8px;}
-                    }
-                    .review_section {
-                        padding: 20px 15px;
-                        .prof_sec {
-                            display: flex;
-                            justify-content: left;
-                            margin-bottom: 20px;
-                            div {
-                                margin-left: 20px;
-                            }
-                        }
-                    }
-                }
                 .content_container {
-                    flex: 3;
+                    .reason_label {
+                        font-size: 20px;
+                    }
+                    .sub_content_container {
+                        padding-right: 20px;
+                        .reason1_section {
+                            .budbo_ecosystem_section {
+                                .banner_section {
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                        .reason2_section {
+                            .mobile_flex_container {
+                                .flex_container {
+                                    justify-content: space-between;
+                                    img:nth-of-type(1), img:nth-of-type(3) {
+                                        height: 460px;
+                                    }
+                                    img:nth-of-type(2) {
+                                        height: 520px;
+                                    }
+                                }
+                            }
+                        }
+                        .reason3_section {
+                            .table_container {
+                                height: 500px;
+                            }
+                        }
+                        .reason4_section {
+                            .mobile_flex_container {
+                                .flex_container {
+                                    justify-content: space-between;
+                                    img:nth-of-type(1), img:nth-of-type(3) {
+                                        height: 460px;
+                                    }
+                                    img:nth-of-type(2) {
+                                        height: 520px;
+                                    }
+                                }
+                            }
+                        }
+                        .reason5_section {
+                            ul.ul_list {
+                                font-size: 20px;
+                            }
+                        }
+                        .reason6_section {
+                            margin: 100px auto;
+                            .flex_container {
+                                .list_container {
+                                    li{
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+                        }
+                        .multi_billion_section {
+                            .owl_banner_section {
+                                h2.banner_text {
+                                    font-size: 32px;
+                                }
+                                .invest_now {
+                                    font-size: 20px;
+                                    img {
+                                        height: 20px;
+                                    }
+                                }
+                            }
+                        }
+                        .what_changed_section {
+                            .owl_banner_section {
+                                h2.banner_text {
+                                    font-size: 32px;
+                                }
+                                .invest_now {
+                                    font-size: 20px;
+                                    img {
+                                        height: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -684,20 +764,35 @@ hr {
 }
 // screen: 1439.99 - 1366
 @media only screen and (max-width: 1439.99px) and (min-width: 1366px) {
+    h1 {
+        font-size: 44px; //48
+        line-height: 52px;
+    }
+    h2 {
+        font-size: 38px;
+        line-height: 44px;
+    }
+    h3 {
+        font-size: 26px;
+        line-height: 32px;
+        margin: 30px 0px;
+    }
+    p {
+        font-size: 20px; //24
+        margin: 30px auto;
+        color: map-get($color , gray_text_color);
+    }
+    .big_para {
+        font-size: 22px;
+    }
     .wrapper {
         .home_section {
             background-color: rgb(168, 228, 178);
             background-size: 55%;
             .desc_container {
                 width: 55%;
-                h1 {
-                    font-size: 44px;
-                }
-                p {
-                    font-size: 24px;
-                }
                 .invest_now {
-                    font-size: 24px;
+                    font-size: 20px;
                 }
             }
         }
@@ -738,7 +833,99 @@ hr {
                     }
                 }
                 .content_container {
-                    flex: 3;
+                    .reason_label {
+                        font-size: 20px;
+                    }
+                    .sub_content_container {
+                        padding-right: 20px;
+                        .reason1_section {
+                            .budbo_ecosystem_section {
+                                .banner_section {
+                                    font-size: 20px;
+                                    width: 220px;
+                                }
+                            }
+                        }
+                        .reason2_section {
+                            .mobile_flex_container {
+                                .flex_container {
+                                    justify-content: space-between;
+                                    img:nth-of-type(1), img:nth-of-type(3) {
+                                        height: 400px;
+                                    }
+                                    img:nth-of-type(2) {
+                                        height: 490px;
+                                    }
+                                }
+                            }
+                        }
+                        .reason3_section {
+                            .table_container {
+                                height: 500px;
+                            }
+                        }
+                        .reason4_section {
+                            .mobile_flex_container {
+                                .flex_container {
+                                    justify-content: space-between;
+                                    img:nth-of-type(1), img:nth-of-type(3) {
+                                        height: 400px;
+                                    }
+                                    img:nth-of-type(2) {
+                                        height: 490px;
+                                    }
+                                }
+                            }
+                        }
+                        .reason5_section {
+                            ul.ul_list {
+                                font-size: 20px;
+                            }
+                        }
+                        .reason6_section {
+                            margin: 100px auto;
+                            .flex_container {
+                                .image_section {
+                                    min-width: 200px;
+                                    .image_container {
+                                        height: 350px;
+                                        background-size: 90%;
+                                    }
+                                }
+                                .list_container {
+                                    li{
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+                        }
+                        .multi_billion_section {
+                            .owl_banner_section {
+                                h2.banner_text {
+                                    font-size: 32px;
+                                }
+                                .invest_now {
+                                    font-size: 20px;
+                                    img {
+                                        height: 20px;
+                                    }
+                                }
+                            }
+                        }
+                        .what_changed_section {
+                            .owl_banner_section {
+                                h2.banner_text {
+                                    font-size: 32px;
+                                }
+                                .invest_now {
+                                    font-size: 20px;
+                                    img {
+                                        height: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -746,6 +933,27 @@ hr {
 }
 // screen: 1365.99 - 1024
 @media only screen and (max-width: 1365.99px) and (min-width: 1024px) {
+    h1 {
+        font-size: 40px; //48
+        line-height: 46px;
+    }
+    h2 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+    h3 {
+        font-size: 26px;
+        line-height: 32px;
+        margin: 30px 0px;
+    }
+    p {
+        font-size: 20px; //24
+        margin: 30px auto;
+        color: map-get($color , gray_text_color);
+    }
+    .big_para {
+        font-size: 20px;
+    }
     .wrapper {
         .home_section {
             background-color: rgb(168, 204, 228);
@@ -753,12 +961,6 @@ hr {
             background-size: 60%;
             .desc_container {
                 width: 68%;
-                h1 {
-                    font-size: 40px;
-                }
-                p {
-                    font-size: 22px;
-                }
                 .invest_now {
                     font-size: 24px;
                 }
@@ -766,13 +968,118 @@ hr {
         }
         .white_content_container {
             .main_container {
-                background-color: rgb(233, 183, 183);
+                background-color: rgb(168, 204, 228);
                 column-gap: 10px;
                 .sidebar_content_container {
                     display: none;
                 }
                 .content_container {
-                    flex: 3;
+                    .reason_label {
+                        font-size: 20px;
+                    }
+                    .sub_content_container {
+                        padding-right: 20px;
+                        .reason1_section {
+                            .budbo_ecosystem_section {
+                                .banner_section {
+                                    font-size: 20px;
+                                    width: 220px;
+                                }
+                            }
+                        }
+                        .reason2_section {
+                            .mobile_flex_container {
+                                .flex_container {
+                                    img:nth-of-type(1), img:nth-of-type(3) {
+                                        height: 430px;
+                                    }
+                                    img:nth-of-type(2) {
+                                        height: 490px;
+                                    }
+                                }
+                            }
+                        }
+                        .reason3_section {
+                            .table_container {
+                                height: 600px;
+                            }
+                        }
+                        .reason4_section {
+                            .mobile_flex_container {
+                                .flex_container {
+                                    img:nth-of-type(1), img:nth-of-type(3) {
+                                        height: 430px;
+                                    }
+                                    img:nth-of-type(2) {
+                                        height: 490px;
+                                    }
+                                }
+                            }
+                        }
+                        .reason5_section {
+                            ul.ul_list {
+                                font-size: 20px;
+                            }
+                            .image_container {
+                                height: 700px;
+                            }
+                        }
+                        .reason6_section {
+                            .flex_container {
+                                // .image_section {
+                                //     min-width: 200px;
+                                //     .image_container {
+                                //         height: 350px;
+                                //         background-size: 90%;
+                                //     }
+                                // }
+                                .list_container {
+                                    li{
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+                        }
+                        .reason7_section {
+                            .world_map_image_container {
+                                height: 900px;
+                            }
+                        }
+                        .multi_billion_section {
+                            .owl_banner_section {
+                                h2.banner_text {
+                                    font-size: 32px;
+                                }
+                                .invest_now {
+                                    font-size: 20px;
+                                    img {
+                                        height: 20px;
+                                    }
+                                }
+                            }
+                        }
+                        .what_changed_section {
+                            .image_container {
+                                height: 700px;
+                            }
+                            .owl_banner_section {
+                                h2.banner_text {
+                                    font-size: 32px;
+                                }
+                                .invest_now {
+                                    font-size: 20px;
+                                    img {
+                                        height: 20px;
+                                    }
+                                }
+                            }
+                        }
+                        .how_budbo_works {
+                            .image_container {
+                                height: 700px;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -780,40 +1087,253 @@ hr {
 }
 // screen: 1023.99 - 768
 @media only screen and (max-width: 1023.99px) and (min-width: 768px) {
+    h1 {
+        font-size: 36px; //48
+        line-height: 42px;
+    }
+    h2 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    h3 {
+        font-size: 24px;
+        line-height: 30px;
+        margin: 30px 0px;
+    }
+    p {
+        font-size: 18px; //24
+        margin: 30px auto;
+        color: map-get($color , gray_text_color);
+    }
+    .big_para {
+        font-size: 20px;
+    }
     .wrapper {
         .home_section {
-            height: 1100px;
+            // height: 1100px;
             background-color: rgb(215, 228, 168);
             background-image: url("../images/illustrations/mob/home_illustration_mob.svg");
             background-position: bottom right;
             background-size: 66%;
             .desc_container {
-                width: 80%;
+                width: 78%;
                 padding-left: 60px;
                 margin: 80px 0px 100px;
-                h1 {
-                    font-size: 40px;
-                    line-height: 52px;
-                }
-                p {
-                    font-size: 22px;
-                }
                 .invest_now {
-                    font-size: 22px;
+                    font-size: 18px;
+                    img {
+                        height: 20px;
+                    }
                 }
             }
         }
         .white_content_container {
             .main_container {
-                background-color: rgb(233, 183, 183);
+                background-color: rgb(215, 228, 168);
                 column-gap: 10px;
                 .sidebar_content_container {
                     display: none;
                 }
                 .content_container {
-                    flex: 3;
+                    .reason_label {
+                        font-size: 18px;
+                    }
                     iframe.video_player {
+                        width: 100%;
                         height: 400px;
+                    }
+                    .sub_content_container {
+                        .reasons_header {
+                            margin: 40px auto;
+                        }
+                        .reason1_section {
+                            margin-top: 70px;
+                            h3:nth-of-type(1) {
+                                margin-top: 0px;
+                            }
+                            .budbo_ecosystem_section {
+                                .budbo_app_section, .budbo_connect_section, .budbo_trax_section {
+                                    .content_section {
+                                        min-width: 300px;
+                                    }
+                                }
+                                .banner_section {
+                                    font-size: 18px;
+                                    width: 220px;
+                                }
+                                .budbo_trax_section {
+                                    margin-bottom: 50px;
+                                }
+                            }
+                        }
+                        .reason2_section {
+                            margin-top: 70px;
+                            h3:nth-of-type(1) {
+                                margin-top: 0px;
+                            }
+                            .mobile_flex_container {
+                                margin: 70px auto;
+                                .flex_container {
+                                    img:nth-of-type(1), img:nth-of-type(3) {
+                                        display: none;
+                                    }
+                                    img:nth-of-type(2) {
+                                        height: 550px;
+                                    }
+                                }
+                            }
+                        }
+                        .reason3_section {
+                            margin-top: 70px;
+                            h3:nth-of-type(1) {
+                                margin-top: 0px;
+                            }
+                            .table_container {
+                                height: 400px;
+                                margin-bottom: 70px;
+                            }
+                        }
+                        .reason4_section {
+                            margin: 70px auto;
+                            h3:nth-of-type(1) {
+                                margin-top: 0px;
+                            }
+                            hr {margin-top: 70px;}
+                            .mobile_flex_container {
+                                margin: 70px auto;
+                                .flex_container {
+                                    img:nth-of-type(1), img:nth-of-type(3) {
+                                        display: none;
+                                    }
+                                    img:nth-of-type(2) {
+                                        height: 550px;
+                                    }
+                                }
+                            }
+                            .img_list_conatiner {
+                                margin: 70px auto;
+                                flex-wrap: wrap;
+                                .img_container {
+                                    background-size: contain;
+                                    margin-left: auto;
+                                    // background-position: right;
+                                }
+                                ul.content_container {
+                                    margin-top: 10px;
+                                    min-width: 300px;
+                                }
+                            }
+                        }
+                        .reason5_section {
+                            margin: 70px auto;
+                            h3:nth-of-type(1) {
+                                margin-top: 0px;
+                            }
+                            ul.ul_list {
+                                font-size: 18px;                                
+                            }
+                            .image_container {
+                                margin: 70px auto;
+                                height: 450px;
+                            }
+                        }
+                        .reason6_section {
+                            margin: 70px auto;
+                            h3:nth-of-type(1) {
+                                margin-top: 0px;
+                            }
+                            .flex_container {
+                                margin: 70px auto;
+                                flex-wrap: wrap;
+                                .image_section {
+                                    // background-color: red;
+                                    margin: auto;
+                                    width: 300px;
+                                    flex: none;
+                                }
+                                .list_container {
+                                    li {
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+                        }
+                        .reason7_section {
+                            margin: 70px auto;
+                            h3:nth-of-type(1) {
+                                margin-top: 0px;
+                            }
+                            .world_map_image_container {
+                                margin: 20px 0px 70px;
+                                height: 650px;
+                                p {
+                                    width: 80%;
+                                    bottom: -40px;
+                                }
+                            }
+                        }
+                        .multi_billion_section {
+                            .image_container {
+                                height: 250px;
+                            }
+                            .owl_banner_section {
+                                margin: 70px auto 100px;
+                                padding: 60px 60px;
+                                h2.banner_text {
+                                    font-size: 30px;
+                                    margin-bottom: 40px;
+                                }
+                                .invest_now {
+                                    font-size: 18px;
+                                    img {
+                                        height: 20px;
+                                    }
+                                }
+                            }
+                        }
+                        .business_solution_section {
+                            margin: 70px auto;
+                            .image_container {
+                                height: 240px;
+                            }
+                        }
+                        .what_changed_section {
+                            .image_container {
+                                margin: 70px auto;
+                                height: 450px;
+                            }
+                            .flex_container {
+                                margin: 70px auto;
+
+                            }
+                            .owl_banner_section {
+                                margin: 70px auto 100px;
+                                padding: 60px 60px;
+                                h2.banner_text {
+                                    font-size: 30px;
+                                    margin-bottom: 40px;
+                                }
+                                .invest_now {
+                                    font-size: 18px;
+                                    img {
+                                        height: 20px;
+                                    }
+                                }
+                            }
+                        }
+                        .how_budbo_works {
+                            .image_container {
+                                margin: 70px auto;
+                                height: 450px;
+                            }
+                            .features_container {
+                                .feature_container {
+                                    p {
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -822,46 +1342,326 @@ hr {
 }
 // screen: 767.99
 @media only screen and (max-width: 767.99px) {
+    h1 {
+        font-size: 32px; //48
+        line-height: 38px;
+    }
+    h2 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    h3 {
+        font-size: 24px;
+        line-height: 30px;
+        margin: 30px 0px;
+    }
+    p {
+        font-size: 18px; //24
+        margin: 30px auto;
+        color: map-get($color , gray_text_color);
+    }
+    .big_para {
+        font-size: 18px;
+    }
     .wrapper {
+        background-color: red;
         .home_section {
-            // height: 1100px;
+            height: 1100px;
             background-color: rgb(214, 168, 228);
             background-image: url("../images/illustrations/mob/home_illustration_mob.svg");
             background-position: bottom right;
             background-size: 80%;
             .desc_container {
-                width: 100%;
+                width: 90%;
                 padding: 10px;
                 margin: 100px 0px 100px;
-                h1 {
-                    font-size: 32px;
-                    line-height: 42px;
-                }
-                p {
-                    font-size: 18px;
-                }
                 .invest_now {
                     margin: 40px 0px;
                     padding: 25px 40px;
                     font-size: 18px;
                     img {
                         margin-left: 5px;
-                        height: 25px;
+                        height: 18px;
                     }
                 }
             }
         }
         .white_content_container {
+            padding: 100px 10px;
             .main_container {
                 background-color: rgb(233, 183, 183);
+                background-color: white;
                 column-gap: 10px;
                 .sidebar_content_container {
                     display: none;
                 }
                 .content_container {
-                    flex: 3;
+                    .reason_label {
+                        font-size: 18px;
+                    }
                     iframe.video_player {
+                        width: 100%;
                         height: 300px;
+                    }
+                    .sub_content_container {
+                        padding: 0px;
+                        .reasons_header {
+                            margin: 40px auto;
+                        }
+                        .reason1_section {
+                            margin-top: 100px;
+                            .budbo_ecosystem_section {
+                                margin: 30px auto;
+                                .budbo_app_section, .budbo_connect_section, .budbo_trax_section {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    // flex-wrap: wrap;
+                                    column-gap: 10px;
+                                    row-gap: 10px;
+                                    padding: 40px 0px;
+                                    // border-bottom: 1px solid map-get($color , border_grey_color);
+                                    .content_section {
+                                        // flex: none;
+                                        span {display: none;}
+                                        color: map-get($color , gray_text_color);
+                                        display: flex;
+                                        align-items: center;
+                                    }
+                                }
+                                .budbo_trax_section {
+                                    margin-bottom: 70px;
+                                }
+                                .banner_section {
+                                    margin-right: auto;
+                                    width: 100%;
+                                    max-width: 275px;
+                                    min-width: auto;
+                                    height: 150px;
+                                    padding-left: 0px;
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                        .reason2_section {
+                            margin-top: 70px;
+                            h3:nth-of-type(1) {
+                                margin-top: 0px;
+                            }
+                            .mobile_flex_container {
+                                margin: 70px auto;
+                                .flex_container {
+                                    img:nth-of-type(1), img:nth-of-type(3) {
+                                        display: none;
+                                    }
+                                    img:nth-of-type(2) {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                        .reason3_section {
+                            margin-top: 70px;
+                            h3:nth-of-type(1) {
+                                margin-top: 0px;
+                            }
+                            .table_container {
+                                height: 400px;
+                                margin-bottom: 70px;
+                                background-position: top;
+                            }
+                        }
+                        .reason4_section {
+                            margin: 70px auto;
+                            h3:nth-of-type(1) {
+                                margin-top: 0px;
+                            }
+                            hr {margin-top: 70px;}
+                            .mobile_flex_container {
+                                margin: 70px auto;
+                                .flex_container {
+                                    img:nth-of-type(1), img:nth-of-type(3) {
+                                        display: none;
+                                    }
+                                    img:nth-of-type(2) {
+                                        // height: 550px;
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                            .img_list_conatiner {
+                                margin: 70px auto;
+                                // flex-wrap: wrap;
+                                flex-direction: column;
+                                .img_container {
+                                    background-color: pink;
+                                    background-size: contain;
+                                    margin: auto;
+                                    min-width: auto;
+                                    // background-position: right;
+                                }
+                                ul.content_container {
+                                    margin-top: 10px;
+                                    min-width: auto;
+                                }
+                            }
+                        }
+                        .reason5_section {
+                            margin: 70px auto;
+                            h3:nth-of-type(1) {
+                                margin-top: 0px;
+                            }
+                            ul.ul_list {
+                                font-size: 18px;                                
+                            }
+                            .image_container {
+                                margin: 70px auto;
+                                height: 450px;
+                                background-position: top;
+                            }
+                        }
+                        .reason6_section {
+                            margin: 70px auto;
+                            h3:nth-of-type(1) {
+                                margin-top: 0px;
+                            }
+                            .flex_container {
+                                margin: 70px auto;
+                                // flex-wrap: wrap;
+                                flex-direction: column;
+                                .image_section {
+                                    background-color: red;
+                                    min-width: auto;
+                                    margin: auto;
+                                    // width: 300px;
+                                    flex: none;
+                                }
+                                .list_container {
+                                    min-width: auto;
+                                    li {
+                                        font-size: 18px;
+                                    }
+                                }
+                            }
+                        }
+                        .reason7_section {
+                            margin: 70px auto;
+                            h3:nth-of-type(1) {
+                                margin-top: 0px;
+                            }
+                            .world_map_image_container {
+                                margin: 20px 0px 0px;
+                                height: 650px;
+                                p {
+                                    display: none;
+                                    // width: 80%;
+                                    // bottom: -40px;
+                                }
+                            }
+                            .mob_content {
+                                display: block;
+                            }
+                        }
+                        .multi_billion_section {
+                            .image_container {
+                                height: 250px;
+                            }
+                            .owl_banner_section {
+                                margin: 70px auto 100px;
+                                padding: 60px 10px;
+                                h2.banner_text {
+                                    font-size: 26px;
+                                    margin-bottom: 40px;
+                                }
+                                .invest_now {
+                                    font-size: 18px;
+                                    img {
+                                        height: 20px;
+                                    }
+                                }
+                                .owl_svg {
+                                    height: 120px;
+                                }
+                            }
+                        }
+                        .business_solution_section {
+                            margin: 70px auto;
+                            .image_container {
+                                height: 240px;
+                            }
+                        }
+                        .what_changed_section {
+                            .image_container {
+                                margin: 70px auto;
+                                height: 450px;
+                            }
+                            .flex_container {
+                                margin: 70px auto;
+                                .contaienr {
+                                    flex-direction: column;
+                                    margin: 30px;
+                                    .content_container {
+                                        min-width: auto;
+                                    }
+                                }
+                            }
+                            .owl_banner_section {
+                                margin: 70px auto 100px;
+                                padding: 60px 10px;
+                                h2.banner_text {
+                                    font-size: 26px;
+                                    margin-bottom: 40px;
+                                }
+                                .invest_now {
+                                    font-size: 18px;
+                                    img {
+                                        height: 20px;
+                                    }
+                                }
+                                .owl_svg {
+                                    height: 120px;
+                                }
+                            }
+                        }
+                        .how_budbo_works {
+                            .image_container {
+                                margin: 70px auto;
+                                height: 450px;
+                            }
+                            .features_container {
+                                .feature_container {
+                                    width: 100%;
+                                    min-width: auto;
+                                    height: auto;
+                                    p {
+                                        font-size: 18px;
+                                    }
+                                    .feature_header {
+                                        font-size: 18px;
+                                        flex-wrap: wrap;
+                                        img {
+                                            height: 30px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .budbo_featuredin_section {
+                            margin-top: 200px;
+                            .flex_container {
+                                margin-top: 100px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                column-gap: 40px;
+                                row-gap: 40px;
+                                img {
+                                    height: 10px;
+                                }
+                            }
+                        }
                     }
                 }
             }
